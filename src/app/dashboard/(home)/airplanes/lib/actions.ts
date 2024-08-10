@@ -43,8 +43,6 @@ export async function saveAirplane(
 
   const uploadedFile = await uploadFile(values.data.image);
 
-  console.log({ uploadFile });
-
   if (uploadedFile instanceof Error) {
     return {
       errorTitle: 'Failed to upload file',

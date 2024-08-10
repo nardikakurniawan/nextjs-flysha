@@ -5,6 +5,15 @@ const nextConfig = {
 
     return config;
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'mfiwdpckkxwxpfjtpbej.supabase.co',
+      },
+    ],
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
